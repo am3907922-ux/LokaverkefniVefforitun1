@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The game has begun</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <section id="info-panel">
+
+            <img id="pet-image" alt="Chosen pet">
+
+            <p id="pet-message">You chose ...</p>
+
+            <div class="stat">
+                <p>Hunger</p>
+                <div class="bar">
+                    <div class="bar-fill" id="hunger-fill"></div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <p>Mood</p>
+                <div class="bar">
+                    <div class="bar-fill" id="mood-fill"></div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <p>Energy</p>
+                <div class="bar">
+                    <div class="bar-fill" id="energy-fill"></div>
+                </div>
+            </div>
+
+            <p id="day-counter">Day 1 of 7</p>
+        </section>
+
+        <section id="button-panel">
+            <button id="feedBtn" class="action-btn">Feed</button>
+            <button id="playtimeBtn" class="action-btn">Playtime</button>
+            <button id="restBtn" class="action-btn">Rest</button>
+        </section>
+
+    </main>
+
+</body>
+</html>

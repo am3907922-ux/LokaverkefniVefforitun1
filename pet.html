@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pet.css">
+    <script src="pet.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+
+        <label for="sidebar-active" class="open-sidebar">
+            <img src="menu.svg" alt="menu">
+        </label>
+
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar">
+                <img src="close.svg" alt="close">
+            </label>
+
+            <a href="index.html">Home<img src="home.svg" alt="home icon"></a>
+            <a href="login.html">Login<img src="login.svg" alt="login icon"></a>
+            <a href="pet.html">My pet<img src="pet.svg" alt="pet icon"></a>
+        </div>
+
+        <button id="darkBtn" onclick="toggleMode()">
+            <img src="darkMode.svg" alt="Dark mode">
+        </button>
+    </nav>
+
+    <main>
+
+        <h1>Choose your pet!</h1>
+
+        <section class="dogs">
+            <h2>Dogs</h2>
+            <button id="LabradorRetriever">Labrador Retriever<br>1 year old</button>
+            <button id="BorderCollie">Border Collie<br>0.5 years old</button>
+            <button id="Pomeranian">Pomeranian<br>4 years old</button>
+        </section>
+
+        <section class="cats">
+            <h2>Cats</h2>
+            <button id="MainCoon">Main Coon<br>3 months old</button>
+            <button id="Siamese">Siamese<br>1 year old</button>
+            <button id="Ragdoll">Ragdoll<br>10 years old</button>
+        </section>
+
+        <section class="fish">
+            <h2>Fish</h2>
+            <button id="Clownfish">Clownfish<br>5 years old</button>
+            <button id="Betta">Betta<br>0.5 years old</button>
+            <button id="Goldfish">Goldfish<br>4 years old</button>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,144 @@
+:root{
+    --color-1: #2f5249;     
+    --color-2: #97b067;     
+    --color-3: #e3df61;    
+}
+/* litabreytur */
+
+:root{
+    --dark-1: #0F0F0F;
+    --dark-2: #008170;
+    --dark-3: #005B41;
+}
+/* dark mode litabreytur*/
+
+*{
+    margin: 0;     /* fjarlægir ytri kant á öllu*/
+    padding: 0;     /* fjarlægir innri kant á öllu*/                                                                          /* */
+}
+body{
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+main h1, main p{
+    text-align: center;    /* þessir textar fara í miðjuna*/
+}
+
+main h1{
+    font-size: 60px;     /* leturstærð*/
+    padding: 50px;
+}
+
+main p h2{
+    text-align: center;
+    font-size: 10px;
+}
+
+nav div a img{
+    padding: 10px;        /*bil á milli textans og logo*/ 
+}
+
+nav{
+    font-size: 20px;    /* leturstærð */
+    font-family: cursive, sans-serif;
+    background-color: var(--color-2);      /* bakgrunnslitur */
+    color: #437057;
+    height: 80px;    /* hæð á navbar */
+    background-color:var(--color-1);    /* bakgrunnslitur navbar */
+    display: flex;      /* kveikjir á flexbox */
+    justify-content: flex-end;     /* setur innihald til hægri */
+    align-items: center;     /* miðjar */
+}
+
+.links-container{
+    background-color: var(--color-1);    /* svartur bakgrunnur  */
+    height: 100%;                 /* fyllir hæðina */
+    width: 100%;    /* fyllir breiddina*/
+    display: flex;     /* kveikjir á flexbox */
+    flex-wrap: row;     /* raðar í línu */
+    align-items: center;    /* miðjar lóðrétt */
+}
+
+nav a{
+    height: 100%;   /* fylla hæð navbars */
+    padding: 0 20px;    /* auka lárétt bil */
+    display: flex;   /* gerir texta miðjaðan */
+    align-items: center;     /* miðjar lóðrétt */
+    text-decoration: none;   /* fjarlægir línu undir sem eru undir */
+    color: var(--color-2);    /* textalitur */
+}
+
+nav a:hover{
+    background-color: var(--color-3);     /* bakgrunnslitur þegar músin fer yfir takkann */
+}
+
+nav svg{
+    fill: var(--color-2);     /* litur á SVG iconinu */
+}
+
+#sidebar-active{
+    display: none;     /* felur checkbox togglið */
+}
+
+.opne-sidebar, .close-sidebar{
+    padding: 0 20px;    /* bil innan takka */
+    display: none;    /* fela takka í stórum skjá */
+}
+
+@media(max-width: 768px){
+    .links-container{
+        flex-direction: column;     /* raðar lóðrétt */
+        align-items: flex-start;    /* setur þá til vinstri */
+        position: fixed;     /* festir við hægri brún */
+        top: 0;     /* fest ofan á skjá */
+        right: -100%;   /* byrjar fyrir utan skjá */
+        width: 200px;   /* breidd  */
+        background-color: var(--color-1);    /* bakgrunnslitur */
+        box-shadow: -5px 0 5px rgb(0, 0, 0.25);   /* skuggi*/
+        transition: 0.75s ease-out;     /* 0.75 sekóndna transition */
+    }
+
+    nav a {
+        box-sizing: border-box;     /* tryggir að padding bæti ekki breidd */
+        height: auto;   /* hæð aðlagast efninu */
+        width: 100%;    /* fylla hliðarstikuna */
+        padding: 20px 30px;     /* stærra bil í litlum skjá */
+        justify-content: flex-start;    /* texti fer til vinstri */
+    }
+
+    .opne-sidebar, .close-sidebar{
+        padding: 20px;     /* bil innan takka */
+        display: block;     /* sýnir takka í litlum skjám */
+    }
+
+    #sidebar-active:checked ~ .links-container{
+        right: 0;   /* sýnir hliðarstikuna bara ef hakað er við */
+    }
+}
+/* stillingar fyrir síma og litla skjái */
+
+
+.body{
+    background-color: var(--dark-1);
+    color: var(--dark-2);
+}
+/*Litabreyturnar fyrir Dark mode*/
+
+#darkBtn {
+    background: none;     /*backgrunnur er glær*/
+    border: none;             /* */
+    padding: 10px;    /*bil innan takka*/
+}
+/*Dark mode takkinn*/
+
+#darkBtn:hover {
+    transform: scale(1.5);
+}
+  /*Hreyfing á takkans*/
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+ /*færir texta í mijpuna*/
